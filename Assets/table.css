@@ -1,0 +1,127 @@
+
+ /* General Body Styling */
+:root{
+    --color-1: rgb(77, 133, 70);
+    --bg-color: #fafafa;
+    --black-2: #000;
+ }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(77, 133, 70);
+    color: #333;
+    margin: 20px;
+    padding: 0;
+}
+
+header{
+    padding: 10px 0;
+}
+.nav {
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    list-style:none;
+    margin: 10px 50px 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+nav a{
+    border-radius: 7px;
+    margin:0 10px;
+    text-decoration:solid;
+    color:white;
+    background-color: rgba(0, 255, 21, 0.726);
+    text-decoration: none; /* Remove underlines from links */
+    padding: 10px 10px; /* Add some padding around the links */
+    font-size: 16px; /* Adjust font size as needed */
+    
+}
+.nav a:hover {
+    color: #007bff; /* Change to your desired hover color */
+    background-color: #98ff21; /* Optional: background color on hover */
+    border-radius: 5px; /* Optional: rounded corners on hover */
+  }
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #2eac35;
+    border-collapse: separate; /* Collapses borders into a single border */
+    border-spacing: 0; /* Remove default spacing between cells */
+}
+
+caption {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+thead {
+    background-color: #909691; /* Blue background for header */
+}
+thead:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+    z-index: 1;
+}
+th:hover{
+    background-color: #44dab4;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    background-color: #158d25; /* White background for cells */
+    position: relative; /* Necessary for hover effect positioning */
+    border: 1px solid #44dab4; /* Light border for rows */
+}
+
+th {
+    font-size: 18px;
+}
+
+td:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+    z-index: 1;
+}
+
+tfoot {
+    background-color: #f9f9f9; /* Slightly different background for footer */
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    table {
+        border: 0;
+    }
+    
+    table caption {
+        font-size: 20px;
+    }
+
+    thead {
+        display: flex; /* Hide header on small screens */
+    }
+
+    tbody, tr, td {
+        display: grid;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ddd; /* Add bottom borders for mobile */
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+}
